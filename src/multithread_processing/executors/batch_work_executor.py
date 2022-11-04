@@ -24,12 +24,12 @@ import time
 
 from requests.exceptions import Timeout as RequestsTimeout, HTTPError, TooManyRedirects
 
-from src.executors.bounded_executor import BoundedExecutor
-from src.executors.fail_safe_executor import FailSafeExecutor
-from src.executors.utils.progress_logger import ProgressLogger
-from src.executors.utils.retriable_value_error import RetriableValueError
-from src.utils.logging_utils import get_logger
-from src.utils.utils import dynamic_batch_iterator
+from multithread_processing.executors.bounded_executor import BoundedExecutor
+from multithread_processing.executors.fail_safe_executor import FailSafeExecutor
+from multithread_processing.executors.utils.progress_logger import ProgressLogger
+from multithread_processing.executors.utils.retriable_value_error import RetriableValueError
+from multithread_processing.utils.logging_utils import get_logger
+from multithread_processing.utils.utils import dynamic_batch_iterator
 
 RETRY_EXCEPTIONS = (ConnectionError, HTTPError, RequestsTimeout, TooManyRedirects, OSError, RetriableValueError)
 

@@ -24,7 +24,7 @@
 import itertools
 import warnings
 
-from src.executors.utils.retriable_value_error import RetriableValueError
+from multithread_processing.executors.utils.retriable_value_error import RetriableValueError
 
 
 def hex_to_dec(hex_string):

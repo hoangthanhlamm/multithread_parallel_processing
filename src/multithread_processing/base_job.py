@@ -20,8 +20,8 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-from src.executors.batch_work_executor import BatchWorkExecutor
-from src.utils.logging_utils import get_logger
+from multithread_processing.executors.batch_work_executor import BatchWorkExecutor
+from multithread_processing.utils.logging_utils import get_logger
 
 logger = get_logger('BaseJob')
 

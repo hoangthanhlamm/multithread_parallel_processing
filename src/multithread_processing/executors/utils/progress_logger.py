@@ -22,8 +22,8 @@
 
 from datetime import datetime
 
-from src.executors.utils.atomic_counter import AtomicCounter
-from src.utils.logging_utils import get_logger
+from multithread_processing.executors.utils.atomic_counter import AtomicCounter
+from multithread_processing.utils.logging_utils import get_logger
 
 
 class ProgressLogger:

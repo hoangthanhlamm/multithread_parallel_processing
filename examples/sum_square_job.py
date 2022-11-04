@@ -1,14 +1,3 @@
-# Multi-thread Parallel Processing
-
-## Installation
-```shell
-pip3 install miltithread_parallel_processing
-```
-
-## Example
-
-Example job to calculate sum of the squares of the first billion natural numbers
-```
 from multithread_processing.base_job import BaseJob
 
 
@@ -45,4 +34,3 @@ if __name__ == '__main__':
         max_workers=10
     )
     job.run()
-```
