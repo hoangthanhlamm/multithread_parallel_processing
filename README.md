@@ -1,5 +1,7 @@
 # Multi-thread Parallel Processing
 
+Library support parallel processing with multi-thread.
+
 ## Installation
 ```shell
 $ pip3 install miltithread_parallel_processing

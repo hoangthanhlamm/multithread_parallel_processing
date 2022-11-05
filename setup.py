@@ -1,11 +1,16 @@
+import re
+
 import setuptools
+
+with open("src/multithread_processing/__init__.py", "rt", encoding="utf8") as f:
+    version = re.search(r"__version__ = \"(.*?)\"", f.read()).group(1)
 
 with open('README.md', 'r', encoding='utf-8') as f:
     long_description = f.read()
 
 setuptools.setup(
     name="multithread_parallel_processing",
-    version="0.1.0",
+    version=version,
     author="Vegeta.IV",
     author_email="hoangthanhlamm@gmail.com",
     description="Library support parallel processing with multi-thread",
