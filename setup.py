@@ -11,12 +11,13 @@ with open('README.md', 'r', encoding='utf-8') as f:
 setuptools.setup(
     name="multithread_parallel_processing",
     version=version,
-    author="Vegeta.IV",
+    author="VegetaIV",
     author_email="hoangthanhlamm@gmail.com",
     description="Library support parallel processing with multi-thread",
     long_description=long_description,
+    long_description_content_type="text/markdown",
     url="https://github.com/hoangthanhlamm/multithread_parallel_processing",
-    project_urls={"Bug Tracker": "https://github.com/hoangthanhlamm/multithread_parallel_processing"},
+    project_urls={"Bug Tracker": "https://github.com/hoangthanhlamm/multithread_parallel_processing", },
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
@@ -27,5 +28,5 @@ setuptools.setup(
     python_requires=">=3.6",
     install_requires=[
         'requests',
-    ]
+    ],
 )

@@ -9,7 +9,8 @@ $ pip3 install miltithread_parallel_processing
 
 ## Example
 
-Example job to calculate sum of the squares of the first billion natural numbers
+Example job to calculate sum of the squares of the first billion natural numbers.
+
 ```python
 from multithread_processing.base_job import BaseJob
 
@@ -37,11 +38,11 @@ class SumSquaresJob(BaseJob):
         self.sum += _sum
 
     def _end(self):
-        print(f'Sum of the squares of the first {self.n} natural numbers: {self.sum}')
+        print(f"Sum of the squares of the first {self.n} natural numbers: {self.sum}")
         self.batch_executor.shutdown()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     job = SumSquaresJob(
         batch_size=10000,
         max_workers=10
