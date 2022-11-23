@@ -50,7 +50,7 @@ class BatchWorkExecutor:
         self.executor = FailSafeExecutor(BoundedExecutor(1, self.max_workers))
         self.retry_exceptions = retry_exceptions
         self.max_retries = max_retries
-        self.progress_logger = ProgressLogger()
+        self.progress_logger = ProgressLogger(logger=logger)
 
     def execute(self, work_iterable, work_handler, total_items=None):
         self.progress_logger.start(total_items=total_items)

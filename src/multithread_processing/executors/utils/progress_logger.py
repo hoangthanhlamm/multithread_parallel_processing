@@ -26,6 +26,9 @@ from multithread_processing.executors.utils.atomic_counter import AtomicCounter
 from multithread_processing.utils.logging_utils import get_logger
 
 
+_LOGGER = get_logger('ProgressLogger')
+
+
 class ProgressLogger:
     def __init__(self, name='work', logger=None, log_percentage_step=10, log_item_step=5000):
         self.name = name
@@ -39,7 +42,7 @@ class ProgressLogger:
         if logger is not None:
             self.logger = logger
         else:
-            self.logger = get_logger('ProgressLogger')
+            self.logger = _LOGGER
 
     def start(self, total_items=None):
         self.total_items = total_items
